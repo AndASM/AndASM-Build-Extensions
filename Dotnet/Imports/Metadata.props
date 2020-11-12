@@ -1,0 +1,16 @@
+<Project>
+	<PropertyGroup>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyInformationalVersionAttribute>true</GenerateAssemblyInformationalVersionAttribute>
+
+		<Product></Product>
+		<PackageLicenseExpression>GPL-3.0-ONLY</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/AndASM/</PackageProjectUrl>
+		<RepositoryType>Git</RepositoryType>
+		<RepositoryUrl>https://github.com/AndASM/</RepositoryUrl>
+		<Copyright>Copyright © 2020 AndASM</Copyright>
+		<Authors>AndASM</Authors>
+
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+	</PropertyGroup>
+</Project>

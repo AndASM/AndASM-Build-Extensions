@@ -1,0 +1,5 @@
+<Project>
+	<PropertyGroup>
+		<AndASM-UtilityDir>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)'))</AndASM-UtilityDir>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<!-- GitVersion -->
+		<UpdateAssemblyInfo>false</UpdateAssemblyInfo>
+		<GetVersion>true</GetVersion>
+		<UpdateVersionProperties>true</UpdateVersionProperties>
+	</PropertyGroup>
+</Project>

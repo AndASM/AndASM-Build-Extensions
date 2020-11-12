@@ -1,0 +1,10 @@
+<Project>
+	<PropertyGroup>
+		<Solution-CommonProps>$([MSBuild]::NormalizePath('$(SolutionDir)Common.Solution.props'))</Solution-CommonProps>
+		<Solution-CommonTargets>$([MSBuild]::NormalizePath('$(SolutionDir)Common.Solution.targets'))</Solution-CommonTargets>
+	</PropertyGroup>
+
+	<Import Project="$(AndASM-ExtensionDir)**/Common.Solution.props" />
+
+	<Import Project="$(Solution-CommonProps)" Condition="Exists('$(Solution-CommonProps)')" />
+</Project>

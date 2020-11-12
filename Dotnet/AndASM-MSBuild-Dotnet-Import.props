@@ -1,0 +1,9 @@
+<Project>
+	<PropertyGroup>
+		<AndASM-DotnetDir>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)'))</AndASM-DotnetDir>
+		<BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)build/</BaseOutputPath>
+		<OutputPath Condition="'$(OutputPath)' == ''">$(BaseOutputPath)$(Configuration)\$(MSBuildProjectName)</OutputPath>
+		<BaseIntermediateOutputPath>$(BaseOutputPath)obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+</Project>

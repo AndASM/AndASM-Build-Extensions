@@ -1,0 +1,11 @@
+<Project>
+	<PropertyGroup>
+		<AndASM-ExtensionDir>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..'))</AndASM-ExtensionDir>
+		<AndASM-CommonDir>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)'))</AndASM-CommonDir>
+
+		<CustomAfterMicrosoftCommonProps>$(AndASM-CommonDir)\Common.props</CustomAfterMicrosoftCommonProps>
+		<CustomAfterMicrosoftCommonTargets>$(AndASM-CommonDir)\Common.targets</CustomAfterMicrosoftCommonTargets>
+	</PropertyGroup>
+
+	<Import Project="$(AndASM-ExtensionDir)**/AndASM-MSBuild-*-Import.props" />
+</Project>
